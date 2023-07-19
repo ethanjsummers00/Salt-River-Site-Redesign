@@ -1,3 +1,78 @@
 html {
   background-color: #EEECE6;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  margin: 0.5%;
+}
+
+#title {
+  display: flex;
+  flex: 80%;
+  font-family: "Lunasima", sans-serif;
+}
+#title h1, #title h2 {
+  font-weight: bold;
+  margin: 0;
+}
+
+#titleText {
+  margin: auto 0 auto 1%;
+}
+
+#hours {
+  flex: 20%;
+  font-family: "Lunasima", sans-serif;
+  text-align: center;
+  margin: auto;
+}
+#hours p {
+  font-size: 1.25em;
+  margin: 0;
+}
+#hours small {
+  font-size: 1em;
+  margin: 0;
+}
+#hours hr {
+  max-width: 50%;
+  margin: 5px auto 5px auto;
+  background-color: #246D42;
+  border: none;
+  height: 3px;
+}
+
+#landing {
+  min-height: 500px;
+  background-image: url("img/riverbackground.jpg");
+}
+#landing nav {
+  width: 50%;
+  text-align: center;
+  background-color: #246D42;
+  border-radius: 0 0 50px 0;
+  font-family: "Lunasima", sans-serif;
+  font-size: 1.5em;
+}
+#landing nav ul {
+  padding: 5px;
+  list-style: none;
+}
+#landing nav li {
+  display: inline;
+  margin: 0 1em 0 1em;
+}
+#landing nav a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.25s;
+}
+#landing nav a:hover {
+  color: #F9D847;
+  transition: color 0.25s;
 }/*# sourceMappingURL=styles.css.map */

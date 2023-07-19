@@ -1,4 +1,67 @@
-$bg-color: #EEECE6
+$tan: #EEECE6
+$cactus-green: #246D42
+$olive-green: #5B723C
+$yellow: #F9D847
     
 html
-    background-color: $bg-color
+    background-color: $tan
+
+body
+    margin: 0
+
+header
+    display: flex
+    margin: 0.5%
+
+#title
+    display: flex
+    flex: 80%
+    font-family: 'Lunasima', sans-serif
+    h1, h2
+        font-weight: bold
+        margin: 0
+
+#titleText
+    margin: auto 0 auto 1%
+
+#hours
+    flex: 20%
+    font-family: 'Lunasima', sans-serif
+    text-align: center
+    margin: auto
+    p
+        font-size: 1.25em
+        margin: 0
+    small
+        font-size: 1em
+        margin: 0
+    hr
+        max-width: 50%
+        margin: 5px auto 5px auto
+        background-color: $cactus-green
+        border: none
+        height: 3px
+
+#landing
+    min-height: 500px
+    background-image: url('img/riverbackground.jpg')
+    nav
+        width: 50%
+        text-align: center
+        background-color: $cactus-green
+        border-radius: 0 0 50px 0
+        font-family: 'Lunasima', sans-serif
+        font-size: 1.5em
+        ul
+            padding: 5px
+            list-style: none
+        li
+            display: inline
+            margin: 0 1em 0 1em
+        a
+            text-decoration: none
+            color: #ffffff
+            transition: color 0.25s
+            &:hover
+                color: $yellow
+                transition: color 0.25s
