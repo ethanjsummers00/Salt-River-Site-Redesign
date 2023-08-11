@@ -19,11 +19,13 @@ header
 main
     hr
         max-width: 800px
-        margin: 10px 0 10px 0.5%
+        margin: 10px auto 10px auto
         background-color: $cactus-green
         border: none
         height: 3px
         text-align: left
+    b
+        font-weight: bold
 
 #title
     display: flex
@@ -61,14 +63,14 @@ main
 #landing
     display: flex
     flex-direction: column
-    min-height: 500px
+    min-height: 80vh
     background-image: url('img/riverbackground.jpg')
     background-size: 2000px
     background-position: center
     background-repeat: no-repeat
     backdrop-filter: blur(1000px)
     nav
-        width: 33%
+        width: 50%
         text-align: center
         background-color: $cactus-green
         border-radius: 0 0 50px 0
@@ -99,61 +101,55 @@ main
         flex: 90%
         h2
             margin-bottom: 20px
-            max-width: 40%
+            max-width: 50%
             font-family: 'Lunasima', sans-serif
-            font-size: 3em
+            font-size: 3.5em
             font-weight: bold
             color: #ffffff
-            -webkit-text-stroke: 1px $olive-green
+            // -webkit-text-stroke: 1px $olive-green
         a
-            width: 10%
+            width: 15%
             margin: 0 auto 0 auto
             background-color: $olive-green
             padding: 5px
             font-family: 'Lunasima', sans-serif
-            font-size: 1.25em
+            font-size: 2em
             text-decoration: none
             color: #ffffff
-            border-radius: 5px
+            border-radius: 10px
+            transition: border 0.25s
             transition: color 0.25s
             &:hover
                 color: $yellow
                 transition: color 0.25s
+                transition: border 0.25s
             
 #reservations
     font-family: 'Lunasima', sans-serif
     font-size: 1.5em
-    ul
-        margin: 0 
-        padding: 5px
+    text-align: center
+    h3
+        margin: auto
+        padding: 10px
         background-color: $cactus-green
-        list-style: none
-        display: inline-flex
         width: 100%
-        text-align: center
-    li
-        display: inline
-        margin: 0 0.5em 0 0.5em
-        flex: 10%
-    a
-        text-decoration: none
         color: #ffffff
-        transition: color 0.25s
-        &:hover
-            color: $yellow
-            transition: color 0.25s
+
 #about
     font-family: 'Inter', sans-serif
-    margin-top: 0.5%
-    margin-left: 0.5%
+    margin: 0.5% auto auto auto
+    text-align: center
     h3
         font-weight: 600
-        font-size: 1.75em
+        font-size: 2em
         color: $olive-green
     p
+        margin: auto
+        padding-top: 5px
+        padding-bottom: 10px
         font-weight: regular
-        font-size: 1.25em
-        max-width: 1500px
+        font-size: 1.4em
+        max-width: 1000px
 
 #faq
     font-family: 'Inter', sans-serif
@@ -163,3 +159,5 @@ main
         font-weight: 600
         font-size: 1.75em
         color: $olive-green
+    ul
+        list-style: inside

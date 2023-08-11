@@ -63,11 +63,14 @@ header {
 
 main hr {
   max-width: 800px;
-  margin: 10px 0 10px 0.5%;
+  margin: 10px auto 10px auto;
   background-color: #246D42;
   border: none;
   height: 3px;
   text-align: left;
+}
+main b {
+  font-weight: bold;
 }
 
 #title {
@@ -114,7 +117,7 @@ main hr {
 #landing {
   display: flex;
   flex-direction: column;
-  min-height: 500px;
+  min-height: 80vh;
   background-image: url("img/riverbackground.jpg");
   background-size: 2000px;
   background-position: center;
@@ -123,7 +126,7 @@ main hr {
           backdrop-filter: blur(1000px);
 }
 #landing nav {
-  width: 33%;
+  width: 50%;
   text-align: center;
   background-color: #246D42;
   border-radius: 0 0 50px 0;
@@ -160,72 +163,61 @@ main hr {
 }
 #landing #advert h2 {
   margin-bottom: 20px;
-  max-width: 40%;
+  max-width: 50%;
   font-family: "Lunasima", sans-serif;
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: bold;
   color: #ffffff;
-  -webkit-text-stroke: 1px #5B723C;
 }
 #landing #advert a {
-  width: 10%;
+  width: 15%;
   margin: 0 auto 0 auto;
   background-color: #5B723C;
   padding: 5px;
   font-family: "Lunasima", sans-serif;
-  font-size: 1.25em;
+  font-size: 2em;
   text-decoration: none;
   color: #ffffff;
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: border 0.25s;
   transition: color 0.25s;
 }
 #landing #advert a:hover {
   color: #F9D847;
   transition: color 0.25s;
+  transition: border 0.25s;
 }
 
 #reservations {
   font-family: "Lunasima", sans-serif;
   font-size: 1.5em;
-}
-#reservations ul {
-  margin: 0;
-  padding: 5px;
-  background-color: #246D42;
-  list-style: none;
-  display: inline-flex;
-  width: 100%;
   text-align: center;
 }
-#reservations li {
-  display: inline;
-  margin: 0 0.5em 0 0.5em;
-  flex: 10%;
-}
-#reservations a {
-  text-decoration: none;
+#reservations h3 {
+  margin: auto;
+  padding: 10px;
+  background-color: #246D42;
+  width: 100%;
   color: #ffffff;
-  transition: color 0.25s;
-}
-#reservations a:hover {
-  color: #F9D847;
-  transition: color 0.25s;
 }
 
 #about {
   font-family: "Inter", sans-serif;
-  margin-top: 0.5%;
-  margin-left: 0.5%;
+  margin: 0.5% auto auto auto;
+  text-align: center;
 }
 #about h3 {
   font-weight: 600;
-  font-size: 1.75em;
+  font-size: 2em;
   color: #5B723C;
 }
 #about p {
+  margin: auto;
+  padding-top: 5px;
+  padding-bottom: 10px;
   font-weight: regular;
-  font-size: 1.25em;
-  max-width: 1500px;
+  font-size: 1.4em;
+  max-width: 1000px;
 }
 
 #faq {
@@ -237,4 +229,7 @@ main hr {
   font-weight: 600;
   font-size: 1.75em;
   color: #5B723C;
+}
+#faq ul {
+  list-style: inside;
 }/*# sourceMappingURL=styles.css.map */
